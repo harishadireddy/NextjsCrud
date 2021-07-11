@@ -1,0 +1,48 @@
+.start {
+  background-color: rgb(8, 8, 8, 0.85);
+  height: 100vh;
+  width: 100vw;
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.text {
+  font-size: 3vw;
+  color: blanchedalmond;
+  font-family: Roboto;
+}
+
+.form {
+  height: 60vh;
+  width: 60%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(//unsplash.it/800/601);
+  /* background-color: blanchedalmond;
+  background-position: center; */
+  background-size: cover;
+  gap: 20px;
+}
+
+.input1 {
+  width: 20rem;
+  height: 3em;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.input2 {
+  width: 20rem;
+  height: 5em;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
