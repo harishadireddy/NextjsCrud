@@ -1,7 +1,6 @@
 module.exports = {
   env: {
-    MONGO_URI:
-      "Place your mongodb connnection string here",
+    MONGO_URI: "your mongodb connection string here",
   },
   reactStrictMode: true,
 };

@@ -29,7 +29,7 @@ const Appbar = () => {
                   </Link>
                 </h3>
                 <h3>
-                  <Link href="/news/info">News</Link>
+                  <Link href="/CRUD/viewCoffee">View </Link>
                 </h3>
 
                 <h3>

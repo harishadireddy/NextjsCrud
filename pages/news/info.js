@@ -27,6 +27,15 @@ export default function info() {
           <div className={styles.six}>six</div>
         </div>
       </div>
+
+      <div className={styles.Mainbody}>
+        <div className={styles.Mainnav}>
+          <div className={styles.navtitle}></div>
+          <div className={styles.navmenu}></div>
+        </div>
+
+        <div className={styles.MainBanner}></div>
+      </div>
     </>
   );
 }
