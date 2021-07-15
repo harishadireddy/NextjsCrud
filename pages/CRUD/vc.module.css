@@ -1,5 +1,5 @@
 .container {
-  /* background-color: pink; */
+  background-color: pink;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,15 @@
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   grid-gap: 12px;
-  margin: 100px;
+  justify-self: center;
+  align-self: center;
+  margin: 20px;
+}
+
+@media (max-width: 690px) {
+  .main_container {
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+  }
 }
 
 .close {

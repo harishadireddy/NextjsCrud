@@ -17,7 +17,11 @@ const Appbar = () => {
         <Toolbar>
           {matches ? (
             <div>
-              <MenuIcon button onClick={() => setstate(true)} />
+              <MenuIcon
+                button
+                color="secondary"
+                onClick={() => setstate(true)}
+              />
             </div>
           ) : (
             <>

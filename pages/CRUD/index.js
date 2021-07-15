@@ -1,11 +1,12 @@
 import Head from "next/head";
 import style from "./crud.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Add = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const profilePictureRef = useRef();
 
   const object = {
     title: name,
@@ -41,20 +42,34 @@ const Add = () => {
         <div className={style.text}>Add your recepie here</div>
 
         <div className={style.form}>
-          <label>Title</label>
+          <label style={{ fontSize: "21px", fontFamily: "Roboto" }}>
+            Title
+          </label>
           <input
             className={style.input1}
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <label>Description</label>
+          <label style={{ fontSize: "21px", fontFamily: "Roboto" }}>
+            Description
+          </label>
           <input
             className={style.input2}
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
+          <label htmlFor="avatar">
+            Profile picture
+            <input
+              type="file"
+              id="avatar"
+              name="avatar"
+              accept="image/png, image/jpeg"
+              ref={profilePictureRef}
+            />
+          </label>
           <button
             button="true"
             style={{
