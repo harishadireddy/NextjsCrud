@@ -25,7 +25,7 @@ const Appbar = () => {
             </div>
           ) : (
             <>
-              <h2>Coffee</h2>
+              <h2 style={{color:'yellow'}} >Coffee</h2>
               <div className={styles.Menu}>
                 <h3>
                   <Link href="/" className="link">
