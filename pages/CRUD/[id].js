@@ -19,7 +19,7 @@ const Edit = ({ notes }) => {
   };
 
   const handleEdit = async () => {
-    const data = await fetch(`http://localhost:3000/api/notes/${id}`, {
+    const data = await fetch(`https://nextjs-crud-gamma.vercel.app/api/notes/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const Edit = ({ notes }) => {
 };
 
 Edit.getInitialProps = async ({ query: { id } }) => {
-  const res = await fetch(`http://localhost:3000/api/notes/${id}`);
+  const res = await fetch(`https://nextjs-crud-gamma.vercel.app/api/notes/${id}`);
 
   const { data } = await res.json();
 
