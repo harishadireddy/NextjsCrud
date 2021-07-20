@@ -59,7 +59,7 @@ const ViewCoffee = ({ notes }) => {
 export default ViewCoffee;
 
 ViewCoffee.getInitialProps = async () => {
-  const res = await fetch("http://localhost:3000/api/notes");
+  const res = await fetch("https://nextjs-crud-gamma.vercel.app/api/notes");
 
   const { data } = await res.json();
 
