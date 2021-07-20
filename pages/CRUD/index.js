@@ -14,7 +14,7 @@ const Add = () => {
   };
 
   const AddCoffee = async () => {
-    const data = await fetch("http://localhost:3000/api/notes", {
+    const data = await fetch("https://nextjs-crud-gamma.vercel.app/api/notes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
